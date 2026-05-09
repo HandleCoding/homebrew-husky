@@ -10,7 +10,7 @@ class Husky < Formula
 
   def install
     libexec.install Dir["*"]
-    chmod 0755, libexec/"husky-macos-universal/bin/husky"
+    chmod 0755, libexec/"bin/husky"
 
     java_home = Formula["openjdk@17"].opt_prefix/"libexec/openjdk.jdk/Contents/Home"
 
@@ -18,7 +18,7 @@ class Husky < Formula
       #!/bin/bash
       export JAVA_HOME="#{java_home}"
       export PATH="$JAVA_HOME/bin:$PATH"
-      exec "#{opt_libexec}/husky-macos-universal/bin/husky" "$@"
+      exec "#{opt_libexec}/bin/husky" "$@"
     SH
   end
 
@@ -29,7 +29,7 @@ class Husky < Formula
         husky serve
 
       Homebrew installs openjdk@17 automatically and keeps the runtime bundle under:
-        #{opt_libexec}/husky-macos-universal
+        #{opt_libexec}
     EOS
   end
 
