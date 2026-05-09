@@ -1,9 +1,9 @@
 class Husky < Formula
   desc "Open-source agent runtime platform"
   homepage "https://github.com/HandleCoding/OpenHuskyAgent"
-  version "0.1.3"
-  url "https://github.com/HandleCoding/OpenHuskyAgent/releases/download/v0.1.3/husky-macos-universal.tar.gz"
-  sha256 "fc32d957610b51c75f5a6ff539e2266d88eb6b89772bb1ee55eb45407d8ed955"
+  version "0.1.4"
+  url "https://github.com/HandleCoding/OpenHuskyAgent/releases/download/v0.1.4/husky-macos-universal.tar.gz"
+  sha256 "488e391a7eea15f7cfeeb89e064c7bf1c93012c5f00dd5e6289a85d09bacde84"
   license "MIT"
 
   depends_on "openjdk@17"
@@ -34,6 +34,6 @@ class Husky < Formula
   end
 
   test do
-    assert_match "husky 0.1.3", shell_output("#{bin}/husky --version")
+    assert_match "husky 0.1.4", shell_output("#{bin}/husky --version")
   end
 end
