@@ -1,9 +1,9 @@
 class Husky < Formula
   desc "Open-source agent runtime platform"
   homepage "https://github.com/HandleCoding/OpenHuskyAgent"
-  version "0.1.6"
-  url "https://github.com/HandleCoding/OpenHuskyAgent/releases/download/v0.1.6/husky-macos-universal.tar.gz"
-  sha256 "ed3c25bfae3876b52bb565d084ed301b84c5d074eedc71597b12e7823ee5e1cc"
+  version "0.1.7"
+  url "https://github.com/HandleCoding/OpenHuskyAgent/releases/download/v0.1.7/husky-macos-universal.tar.gz"
+  sha256 "237363b1d4537a0c3d83ce0e6d6313dcaafbf788a19fb551a017436648ae9a98"
   license "MIT"
 
   depends_on "openjdk@17"
