@@ -34,6 +34,6 @@ class Husky < Formula
   end
 
   test do
-    assert_match "husky 0.1.6", shell_output("#{bin}/husky --version")
+    assert_match "husky #{version}", shell_output("#{bin}/husky --version")
   end
 end
